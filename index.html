@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Twst">
+    <meta name="keywords" content="Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet"></head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header__wrap header__wrap_top">
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li><a href="#"></a>Главная</li>
+                            <li class="active"><a href="#"></a>О компании</li>
+                            <li><a href="#"></a>Ссылка 1</li>
+                            <li><a href="#"></a>Ссылка 2</li>
+                            <li><a href="#"></a>Ссылка 3</li>
+                        </ul>
+                    </nav>
+                    <nav class="nav nav__mobile">
+                        <ul class="nav__list">
+                            <li class="white">Меню</li>
+                            <li><a href="#">Сcылка 1</a></li>
+                            <li><a href="#">Сcылка 2</a></li>
+                            <li><a href="#">Сcылка 3</a></li>
+                            <li><a href="#">Сcылка 4</a></li>
+                            <li><a href="#">Сcылка 5</a></li>
+                            <li><a href="#">Сcылка 6</a></li>
+                            <li><a href="#">Сcылка 7</a></li>
+                        </ul>
+                        <ul class="nav__list">
+                            <li><a href="#"></a>Главная</li>
+                            <li class="active"><a href="#"></a>О компании</li>
+                            <li><a href="#"></a>Ссылка 1</li>
+                            <li><a href="#"></a>Ссылка 2</li>
+                            <li><a href="#"></a>Ссылка 3</li>
+                            <li><button class="btn btn-orange btn-popup" data-name-popup="call-me">Перезвонить
+                                    мне</button></li>
+                        </ul>
+                    </nav>
+                    <button class="btn btn-orange btn-burger"><span class="v-hidden">меню</span></button>
+                    <button class="btn btn-orange btn-enter btn-popup" data-name-popup="login">Вход</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header__wrap">
+                    <div class="header__logo">
+                        <a href="#"><img src="assets/img/logo.png" alt="TEST"></a>
+                    </div>
+                    <div class="header__call">
+                        <a href="tel:+3809817000740">+380 98 170 00 740</a>
+                        <a href="tel:+3809817000740">+380 98 170 00 740</a>
+                        <button class="btn btn-orange btn-call btn-popup" data-name-popup="call-me">Перезвонить
+                            мне</button>
+                    </div>
+                    <div class="header__actions">
+                        <ul class="actions__list">
+                            <li class="actions__item">
+                                <button class="actions__btn comparison" >
+                                    сравнение
+                                </button>
+                            </li>
+                            <li class="actions__item">
+                                <button class="actions__btn favorites">
+                                    избранное
+                                </button>
+                            </li>
+                            <li class="actions__item">
+                                <button class="actions__btn basket">
+                                    корзина
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <div class="content__wrap">
+                <div class="content__sidebar">
+                    <div class="sidebar__menu">
+                        <button class="btn btn-menu">
+                            <span></span>
+                            <span>Меню</span>
+                        </button>
+                    </div>
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item"><a href="#">Сcылка 1</a></li>
+                        <li class="sidebar__item"><a href="#">Сcылка 2</a></li>
+                        <li class="sidebar__item"><a href="#">Сcылка 3</a></li>
+                        <li class="sidebar__item"><a href="#">Сcылка 4</a></li>
+                        <li class="sidebar__item"><a href="#">Сcылка 5</a></li>
+                        <li class="sidebar__item"><a href="#">Сcылка 6</a></li>
+                        <li class="sidebar__item"><a href="#">Сcылка 7</a></li>
+                    </ul>
+                </div>
+                <div class="content__main">
+                    <div class="main__search">
+                        <div class="main__site-search">
+                            <input type="text" id="search-site" placeholder="Поиск по сайту">
+                        </div>
+                        <div class="main__category">
+                            <div class="select">
+                                <input type="hidden" name="type" class="type" value="Все категории">
+                                <div class="select__checked">Все категории</div>
+                                <ul class="select__dropdown">
+                                    <li class="select__option" data-value="Все категории">Все категории</li>
+                                    <li class="select__option" data-value="Все категории 2">Все категории 2</li>
+                                    <li class="select__option" data-value="Все категории 3">Все категории 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main__search-btn">
+                            <button class="btn btn-gray btn-search" disabled>Поиск</button>
+                        </div>
+                    </div>
+                    <div class="content__filter">
+                        <div class="filter__top">
+                            <ul class="filter__top-list">
+                                <li class="filter__top-item active">
+                                    <a href="#">
+                                        <img src="assets/img/i-filter-1.png" alt="Ссылка 1">
+                                        Ссылка 1
+                                    </a>
+                                </li>
+                                <li class="filter__top-item">
+                                    <a href="#">
+                                        <img src="assets/img/i-filter-2.png" alt="Ссылка 2">
+                                        Ссылка 2
+                                    </a>
+                                </li>
+                                <li class="filter__top-item">
+                                    <a href="#">
+                                        <img src="assets/img/i-filter-3.png" alt="Ссылка 3">
+                                        Ссылка 3
+                                    </a>
+                                </li>
+                                <li class="filter__top-item">
+                                    <a href="#">
+                                        <img src="assets/img/i-filter-4.png" alt="Ссылка 4">
+                                        Ссылка 4
+                                    </a>
+                                </li>
+                                <li class="filter__top-item">
+                                    <a href="#">
+                                        <img src="assets/img/i-filter-5.png" alt="Ссылка 5">
+                                        Ссылка 5
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter__form">
+                            <form class="main-form">
+                                <div class="filter__tabs">
+                                    <button class="btn btn-tab" data-tab="1">Tab 1</button>
+                                    <button class="btn btn-tab" data-tab="2">Tab 2</button>
+                                </div>
+                                <div class="filter__tabs-item" data-tab-index="1">
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 1">
+                                        <div class="select__checked">Select 1</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 1">Select 1</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 2">
+                                        <div class="select__checked">Select 2</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 3">
+                                        <div class="select__checked">Select 3</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 4">
+                                        <div class="select__checked">Select 4</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 4">Select 4</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 5">
+                                        <div class="select__checked">Select 5</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 5">Select 5</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 6">
+                                        <div class="select__checked">Select 6</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 6">Select 6</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 7">
+                                        <div class="select__checked">Select 7</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 7">Select 7</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter__tabs-price">
+                                        <span>Цена</span>
+                                        <div><input type="text" class="cost-validate"></div>
+                                        <div><input type="text" placeholder="25000" class="cost-validate"></div>
+                                    </div>
+                                </div>
+                                <div class="filter__tabs-item" data-tab-index="2">
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 1">
+                                        <div class="select__checked">Select 1</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 1">Select 1</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 2">
+                                        <div class="select__checked">Select 2</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 3">
+                                        <div class="select__checked">Select 3</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 4">
+                                        <div class="select__checked">Select 4</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 4">Select 4</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="select">
+                                        <input type="hidden" name="type" class="type" value="Select 5">
+                                        <div class="select__checked">Select 5</div>
+                                        <ul class="select__dropdown">
+                                            <li class="select__option" data-value="Select 5">Select 5</li>
+                                            <li class="select__option" data-value="Select 2">Select 2</li>
+                                            <li class="select__option" data-value="Select 3">Select 3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter__tabs-price">
+                                        <span>Цена</span>
+                                        <div><input type="text"></div>
+                                        <div><input type="text" placeholder="25000"></div>
+                                    </div>
+                                </div>
+                                <div class="form__button">
+                                    <button class="btn btn-reset" type="reset">Очистить фильтр</button>
+                                    <button class="btn btn-submit" type="button">Применить фильтр</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <h3 class="title">Карточки товаров</h3>
+            <div class="products__wrap">
+                <div class="products__item" data-product-id="1">
+                    <h4 class="products__mark">Mark</h4>
+                    <div class="products__name">
+                        <a href="#">Антифриз Fosser Antifreeze
+                            FA 12 Readymix 1 л Concentrat, Germany</a>
+                    </div>
+                    <div class="products__info">
+                        <div class="products__stars">
+                            <div class="rating-result">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                        </div>
+                        <div class="products__reviews"><a href="#">Отзывы (10)</a></div>
+                        <div class="products__stock">В наличии: 24 шт.</div>
+                    </div>
+                    <div class="products__picture">
+                        <div class="products__picture-descr">
+                            <div class="picture__item summer">Летняя</div>
+                            <div class="picture__item passenger">легковая</div>
+                            <div class="picture__item new">новая</div>
+                        </div>
+                        <div class="products__img">
+                            <img src="assets/img/products-1.png" alt="products-1">
+                        </div>
+                    </div>
+                    <div class="products__promo">
+                        <div class="promo promo-gren">Новинка</div>
+                        <div class="promo promo-violet">Хит</div>
+                        <div class="promo promo-red">скидка</div>
+                    </div>
+                    <div class="products__cost">
+                        <div class="new-cost">599 грн.</div>
+                        <div class="old-cost">1 250 грн.</div>
+                    </div>
+                    <button class="btn btn-buy">купить товар</button>
+                    <div class="products__actions">
+                        <div class="products__compare">
+                            <a href="#">Сравнить товар</a>
+                        </div>
+                        <div class="products__favorites">
+                            <a href="#">В избранное</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item" data-product-id="2">
+                    <h4 class="products__mark">Mark</h4>
+                    <div class="products__name">
+                        <a href="#">Антифриз Fosser Antifreeze
+                            FA 12 Readymix 1 л Concentrat, Germany</a>
+                    </div>
+                    <div class="products__info">
+                        <div class="products__stars">
+                            <div class="rating-result">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="products__reviews"><a href="#">Отзывы (10)</a></div>
+                        <div class="products__stock">В наличии: 24 шт.</div>
+                    </div>
+                    <div class="products__picture">
+                        <div class="products__picture-descr">
+                            <div class="picture__item summer">Летняя</div>
+                            <div class="picture__item new">новая</div>
+                        </div>
+                        <div class="products__img">
+                            <img src="assets/img/products-2.png" alt="products-1">
+                        </div>
+                    </div>
+                    <div class="products__promo">
+                        <div class="promo promo-gren">Новинка</div>
+                        <div class="promo promo-violet">Хит</div>
+                    </div>
+                    <div class="products__cost">
+                        <div class="new-cost">599 грн.</div>
+                        <div class="old-cost">1 250 грн.</div>
+                    </div>
+                    <button class="btn btn-buy">купить товар</button>
+                    <div class="products__actions">
+                        <div class="products__compare">
+                            <a href="#">Сравнить товар</a>
+                        </div>
+                        <div class="products__favorites">
+                            <a href="#">В избранное</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item" data-product-id="3">
+                    <h4 class="products__mark">Mark</h4>
+                    <div class="products__name">
+                        <a href="#">Антифриз Fosser Antifreeze
+                            FA 12 Readymix 1 л Concentrat, Germany</a>
+                    </div>
+                    <div class="products__info">
+                        <div class="products__stars">
+                            <div class="rating-result">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="products__reviews"><a href="#">Отзывы (10)</a></div>
+                        <div class="products__stock">В наличии: 24 шт.</div>
+                    </div>
+                    <div class="products__picture">
+                        <div class="products__picture-descr">
+                            <div class="picture__item summer">Летняя</div>
+                            <div class="picture__item passenger">легковая</div>
+                            <div class="picture__item new">новая</div>
+                        </div>
+                        <div class="products__img">
+                            <img src="assets/img/products-3.png" alt="products-1">
+                        </div>
+                    </div>
+                    <div class="products__promo">
+                        <div class="promo promo-gren">Новинка</div>
+                    </div>
+                    <div class="products__cost">
+                        <div class="new-cost">9 570 грн.</div>
+                        <div class="old-cost">11 250 грн.</div>
+                    </div>
+                    <button class="btn btn-buy">купить товар</button>
+                    <div class="products__actions">
+                        <div class="products__compare">
+                            <a href="#">Сравнить товар</a>
+                        </div>
+                        <div class="products__favorites">
+                            <a href="#">В избранное</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item" data-product-id="4">
+                    <h4 class="products__mark">Mark</h4>
+                    <div class="products__name">
+                        <a href="#">Антифриз Fosser Antifreeze </a>
+                    </div>
+                    <div class="products__info">
+                        <div class="products__stars">
+                            <div class="rating-result">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                        </div>
+                        <div class="products__reviews"><a href="#">Отзывы (10)</a></div>
+                        <div class="products__stock">В наличии: 24 шт.</div>
+                    </div>
+                    <div class="products__picture">
+                        <div class="products__picture-descr">
+                            <div class="picture__item summer">Летняя</div>
+                            <div class="picture__item passenger">легковая</div>
+                        </div>
+                        <div class="products__img">
+                            <img src="assets/img/products-4.png" alt="products-1">
+                        </div>
+                    </div>
+                    <div class="products__cost">
+                        <div class="new-cost">599 грн.</div>
+                    </div>
+                    <button class="btn btn-buy">купить товар</button>
+                    <div class="products__actions">
+                        <div class="products__compare">
+                            <a href="#">Сравнить товар</a>
+                        </div>
+                        <div class="products__favorites">
+                            <a href="#">В избранное</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__mailing">
+                    <div class="footer__title">
+                        <h3 class="title">Блок 1</h3>
+                    </div>
+                    <div class="footer__mailing-block">
+                        <p class="info-gray">Будьте в курсе новостей и новинок!</p>
+                        <p class="info-white">Подписывайтесь на рассылку</p>
+                        <form class="footer__form">
+                            <input type="email" name="user_email" id="news_email" required placeholder="Укажите свой email для подписки">
+                            <button class="btn btn-gray btn-popup btn-sign-in-news" disabled type="button" data-name-popup="success">подписаться</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__link">
+                    <div class="footer__title">
+                        <h3 class="title">Блок ссылок 1</h3>
+                    </div>
+                    <div class="footer__links">
+                        <a href="#" class="link">Ссылка 1</a>
+                        <a href="#" class="link">Ссылка 2</a>
+                        <a href="#" class="link">Ссылка 3</a>
+                        <a href="#" class="link">Ссылка 4</a>
+                    </div>
+                </div>
+                <div class="footer__link">
+                    <div class="footer__title">
+                        <h3 class="title">Блок ссылок 2</h3>
+                    </div>
+                    <div class="footer__links">
+                        <a href="#" class="link">Ссылка 1</a>
+                        <a href="#" class="link">Ссылка 2</a>
+                        <a href="#" class="link">Ссылка 3</a>
+                        <a href="#" class="link">Ссылка 4</a>
+                    </div>
+                </div>
+                <div class="footer__link">
+                    <div class="footer__title">
+                        <h3 class="title">Блок ссылок 3</h3>
+                    </div>
+                    <div class="footer__links">
+                        <a href="#" class="link">Ссылка 1</a>
+                        <a href="#" class="link">Ссылка 2</a>
+                        <a href="#" class="link">Ссылка 3</a>
+                        <a href="#" class="link">Ссылка 4</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <img src="assets/img/logo-black.png" alt="TEST">
+
+                    <p class="footer__copyrith">
+                        © Copyrith 2017. Тестовое задание Wezom
+                    </p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="link">
+                        <span class="v-hidden">vkontakte</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <g>
+                                <g>
+                                    <path fill="#fff"
+                                        d="M13.77 5.722c.531.516 1.091 1 1.567 1.567.21.252.41.512.562.805.216.415.02.873-.355.897h-2.33c-.602.049-1.081-.192-1.485-.6-.322-.327-.621-.675-.932-1.012a2.204 2.204 0 0 0-.419-.37c-.318-.206-.594-.144-.776.186-.185.336-.227.708-.246 1.082-.025.545-.19.689-.742.713-1.178.056-2.296-.121-3.335-.712-.916-.521-1.626-1.256-2.245-2.089C1.831 4.569.91 2.787.081.956-.106.543.03.322.488.314 1.25.299 2.01.3 2.771.313c.309.004.513.18.633.47a14.045 14.045 0 0 0 1.546 2.85c.169.236.34.472.585.638.27.184.476.123.603-.176.08-.19.116-.394.134-.598.06-.699.068-1.397-.037-2.094C6.17.968 5.923.686 5.487.604c-.223-.042-.19-.124-.082-.25C5.592.135 5.768 0 6.12 0h2.634c.415.081.507.266.564.681L9.32 3.59c-.005.16.08.637.372.743.233.076.386-.11.526-.256.63-.666 1.08-1.452 1.483-2.266.178-.358.332-.73.48-1.102.11-.275.284-.411.596-.405l2.535.002c.076 0 .152.001.224.013.428.073.545.256.413.67-.208.65-.613 1.193-1.008 1.738-.423.581-.875 1.143-1.294 1.728-.386.534-.355.804.123 1.267z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="link">
+                        <span class="v-hidden">facebook</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
+                            <g>
+                                <g>
+                                    <path fill="#fff"
+                                        d="M7.698.003L5.78-.001C3.624 0 2.23 1.545 2.23 3.937v1.815H.301C.136 5.752 0 5.9 0 6.08v2.63c0 .181.135.327.302.327H2.23v6.638c0 .18.135.326.302.326H5.05c.166 0 .301-.146.301-.326V9.036h2.256c.167 0 .302-.146.302-.326V6.08a.341.341 0 0 0-.088-.232.292.292 0 0 0-.213-.096H5.35V4.214c0-.74.164-1.116 1.054-1.116h1.293c.167 0 .302-.146.302-.326V.329c0-.18-.135-.326-.302-.326z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="link">
+                        <span class="v-hidden">twitter</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+                            <g>
+                                <g>
+                                    <path fill="#fff"
+                                        d="M15.559.24a6.598 6.598 0 0 1-2.086.797A3.283 3.283 0 0 0 7.88 4.03 9.319 9.319 0 0 1 1.114.6a3.26 3.26 0 0 0-.443 1.65A3.28 3.28 0 0 0 2.13 4.98 3.278 3.278 0 0 1 .643 4.57v.04a3.287 3.287 0 0 0 2.632 3.22 3.324 3.324 0 0 1-1.483.055 3.288 3.288 0 0 0 3.066 2.28A6.586 6.586 0 0 1 .783 11.57c-.265 0-.526-.016-.783-.045A9.297 9.297 0 0 0 5.03 13c6.038 0 9.34-5.002 9.34-9.34l-.011-.425A6.607 6.607 0 0 0 16 1.538c-.589.26-1.22.438-1.885.517A3.301 3.301 0 0 0 15.56.24z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="link">
+                        <span class="v-hidden">youtube</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11">
+                            <g>
+                                <g>
+                                    <path fill="#fff"
+                                        d="M16 4.147v2.706c0 1.715-.277 2.707-.926 3.313-.634.592-1.612.834-3.378.834H4.304C.665 11 0 9.603 0 6.853V4.147C0 2.727 0 1.7.56 1.005 1.137.29 2.22 0 4.305 0h7.392c2.036 0 3.103.273 3.68.944.58.674.624 1.705.624 3.203zm-5.451 1.279a.503.503 0 0 0-.278-.447L6.914 3.276a.528.528 0 0 0-.506.017.502.502 0 0 0-.248.43V7.14c0 .177.094.34.249.432a.525.525 0 0 0 .506.015l3.357-1.714a.502.502 0 0 0 .277-.447z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                </div>
+                <div class="footer_development">
+                    <img src="assets/img/rectangle.png" alt="">
+                    <div class="wrap">
+                        <p class="gray">Разработка тестового</p>
+                        <p class="white">Wezom Agency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup">
+
+        <div class="popup__item popup__login-block" data-popup-name="login">
+            <button class="close-icon close-popup"><span class="v-hidden">закрыть попап</span></button>
+            <div class="popup__wrap">
+                <div class="popup__login">
+                    <h3 class="popup__title">Вход в личный кабинет</h3>
+                    <form class="form__login" method="POST">
+                        <p class="form__group">
+                            <label for="user__email">Ваш email</label>
+                            <input type="email" name="user__email" id="user__email"
+                                placeholder="mikel_ivanov98@gmail.com">
+                        </p>
+                        <p class="form__group">
+                            <label for="user__password">Пароль</label>
+                            <input type="password" name="user__password" id="user__password"
+                                placeholder="*************">
+                        </p>
+                        <p class="form__group">
+                            <label class="form__remember">
+                                <input type="checkbox" name="user_remember" id="user_remember">
+                                Запомнить меня
+                            </label>
+                        </p>
+                        <p class="form__group form__link">
+                            <a href="#" class="link">Забыли пароль?</a>
+                            <a href="#" class="link">Регистрация</a>
+                        </p>
+                        <p class="form__group">
+                            <button class="btn form__btn btn-login" disabled>Войти в личный кабинет</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="popup__login">
+                    <h3 class="popup__title">Войти с помощью</h3>
+                    <a href="#" class="popup__social facebook">
+                        <span class="v-hidden">Facebook</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16">
+                            <g>
+                                <g>
+                                    <path fill="#fff"
+                                        d="M7.698.003L5.78-.001C3.624 0 2.23 1.545 2.23 3.937v1.815H.301C.136 5.752 0 5.9 0 6.08v2.63c0 .181.135.327.302.327H2.23v6.638c0 .18.135.326.302.326H5.05c.166 0 .301-.146.301-.326V9.036h2.256c.167 0 .302-.146.302-.326V6.08a.341.341 0 0 0-.088-.232.292.292 0 0 0-.213-.096H5.35V4.214c0-.74.164-1.116 1.054-1.116h1.293c.167 0 .302-.146.302-.326V.329c0-.18-.135-.326-.302-.326z" />
+                                </g>
+                            </g>
+                        </svg>
+                        Facebook</a>
+                    <a href="#" class="popup__social twitter">
+                        <span class="v-hidden">Twitter</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+                            <g>
+                                <g>
+                                    <path fill="#fff"
+                                        d="M15.559.24a6.598 6.598 0 0 1-2.086.797A3.283 3.283 0 0 0 7.88 4.03 9.319 9.319 0 0 1 1.114.6a3.26 3.26 0 0 0-.443 1.65A3.28 3.28 0 0 0 2.13 4.98 3.278 3.278 0 0 1 .643 4.57v.04a3.287 3.287 0 0 0 2.632 3.22 3.324 3.324 0 0 1-1.483.055 3.288 3.288 0 0 0 3.066 2.28A6.586 6.586 0 0 1 .783 11.57c-.265 0-.526-.016-.783-.045A9.297 9.297 0 0 0 5.03 13c6.038 0 9.34-5.002 9.34-9.34l-.011-.425A6.607 6.607 0 0 0 16 1.538c-.589.26-1.22.438-1.885.517A3.301 3.301 0 0 0 15.56.24z" />
+                                </g>
+                            </g>
+                        </svg>
+                        Twitter</a>
+                    <a href="#" class="popup__social google">
+                        <span class="v-hidden">Google</span>
+                        <svg svg aria-hidden="true" focusable="false" width="16" height="16" data-prefix="fab"
+                            data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                            <path fill="#fff"
+                                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                            </path>
+                        </svg>
+                        Google</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup__item" data-popup-name="call-me">
+            <button class="close-icon close-popup"><span class="v-hidden">закрыть попап</span></button>
+            <div class="popup__wrap">
+                <h3 class="popup__title">Перезвоните мне</h3>
+                <form class="form__call">
+                    <p class="form__group">
+                        <label for="user__phone">Номер телефона</label>
+                        <input type="tel" name="user__phone" id="user__phone" placeholder="+38(0__) ___ - __ - __">
+                    </p>
+                    <p class="form__group">
+                        <button class="btn form__btn btn-orange">Перезвоните мне</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup__item popup__success" data-popup-name="success">
+            <button class="close-icon close-popup"><span class="v-hidden">закрыть попап</span></button>
+            <div class="popup__wrap">
+                <h3 class="popup__title">Вы успешно подписаны на рассылку</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="assets/js/app.js"></script></body>
+
+</html>
